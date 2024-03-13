@@ -4,6 +4,22 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="blue_50">#223080</color>
-
     <color name="blue_40">#5469E6</color>
+
+    <color name="blue_600">#3821ED</color>
+    <color name="blue_500">#34495E</color>
+    <color name="blue_400">#3877BD</color>
+    <color name="blue_300">#3498DB</color>
+    <color name="blue_200">#AACCFF</color>
+    <color name="blue_100">#CCE5FF</color>
+
+    <color name="gray_x">#EEEEF9</color>
+
+    <color name="orange_600">#F55C2F</color>
+    <color name="orange_500">#EC5546</color>
+    <color name="orange_400">#E98730</color>
+    <color name="orange_300">#F29E2B</color>
+    <color name="orange_200">#F2C093</color>
+    <color name="orange_100">#F9D4BD</color>
+
 </resources>
