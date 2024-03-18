@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         var inicialized: Int = 0
         var operator: Int = 0
         var numberText: CharSequence = ""
+        
 
 
         /**val num_01 = findViewById<Button>(R.id.btt_17)
@@ -99,8 +100,14 @@ class MainActivity : AppCompatActivity() {
         }
 
         equals.setOnClickListener(){
-            //val calculatedResult = Expression(conta.text.toString()).calculate()
-            conta.text = "0";
+            val calculatedResult = Expression(conta.text.toString()).calculate()
+
+            if (calculatedResult.isNaN()){
+                result.text = "Expressão inválida"
+            }else{
+                result.text = calculatedResult.toString()
+            }
+
         }
     }
 }
