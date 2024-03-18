@@ -1,23 +1,25 @@
 <resources>
-    <string name="app_name">Binoladora</string>
+    <string name="app_name">Binoladora 😊</string>
 
     // row 1
     <string name="percentage">%</string>
-    <string name="ce">CE</string>
+    <string name="log">LOG</string>
+    <string name="opParenthesis">(</string>
+    <string name="clParenthesis">)</string>
     <string name="c">C</string>
-    <string name="backspace">apaga</string>
+    <string name="backspace">⌫</string>
 
     // row 2
-    <string name="fraction">1/x</string>
+    <string name="factor">x!</string>
     <string name="power">x²</string>
-    <string name="root">²Vx</string>
-    <string name="division">:-</string>
+    <string name="root">²√x</string>
+    <string name="division">÷</string>
 
     // row 3
     <string name="seven">7</string>
-    <string name="eigh">8</string>
+    <string name="eight">8</string>
     <string name="nine">9</string>
-    <string name="times">.</string>
+    <string name="times">x</string>
 
     // row 4
     <string name="four">4</string>
