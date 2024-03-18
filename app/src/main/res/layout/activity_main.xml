@@ -30,7 +30,7 @@
             android:id="@+id/math"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="536 - 524 "
+            android:text="0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -63,19 +63,19 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btt_1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/buttons_margin"
-                android:layout_weight="1"
+                android:text="@string/c"
+                android:textSize="@dimen/text_size_normal"
                 android:background="@color/blue_50"
-                android:focusableInTouchMode="false"
-                android:text="@string/ce"
                 android:textColor="@color/blue_100"
-                android:textSize="@dimen/text_size_normal" />
+                android:layout_margin="@dimen/buttons_margin"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btt_2"
-                android:text="@string/c"
+                android:text="@string/opParenthesis"
                 android:textSize="@dimen/text_size_normal"
                 android:background="@color/blue_50"
                 android:textColor="@color/blue_100"
@@ -87,7 +87,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btt_3"
-                android:text="@string/percentage"
+                android:text="@string/clParenthesis"
                 android:textSize="@dimen/text_size_normal"
                 android:background="@color/blue_50"
                 android:textColor="@color/blue_100"
@@ -96,12 +96,10 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
             />
-            <androidx.appcompat.widget.AppCompatButton
+            <ImageButton
                 android:id="@+id/btt_4"
-                android:text="@string/backspace"
-                android:textSize="@dimen/text_size_normal"
+                android:src="@drawable/backspace"
                 android:background="@color/orange_500"
-                android:textColor="@color/orange_200"
                 android:layout_margin="@dimen/buttons_margin"
                 android:layout_height="match_parent"
                 android:layout_width="0dp"
@@ -113,18 +111,6 @@
             android:layout_weight="1">
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btt_5"
-                android:text="@string/fraction"
-                android:textSize="@dimen/text_size_normal"
-                android:background="@color/blue_50"
-                android:textColor="@color/blue_100"
-                android:layout_margin="@dimen/buttons_margin"
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btt_6"
                 android:text="@string/power"
                 android:textSize="@dimen/text_size_normal"
                 android:background="@color/blue_50"
@@ -136,8 +122,20 @@
                 />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btt_7"
+                android:id="@+id/btt_6"
                 android:text="@string/root"
+                android:textSize="@dimen/text_size_normal"
+                android:background="@color/blue_50"
+                android:textColor="@color/blue_100"
+                android:layout_margin="@dimen/buttons_margin"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btt_7"
+                android:text="@string/percentage"
                 android:textSize="@dimen/text_size_normal"
                 android:background="@color/blue_50"
                 android:textColor="@color/blue_100"

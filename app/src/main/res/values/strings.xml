@@ -3,12 +3,14 @@
 
     // row 1
     <string name="percentage">%</string>
-    <string name="ce">CE</string>
+    <string name="log">LOG</string>
+    <string name="opParenthesis">(</string>
+    <string name="clParenthesis">)</string>
     <string name="c">C</string>
     <string name="backspace">⌫</string>
 
     // row 2
-    <string name="fraction">1/x</string>
+    <string name="factor">x!</string>
     <string name="power">x²</string>
     <string name="root">²√x</string>
     <string name="division">÷</string>
