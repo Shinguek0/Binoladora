@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
+import org.mariuszgromada.math.mxparser.Expression
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +21,9 @@ class MainActivity : AppCompatActivity() {
 
         var inicialized: Int = 0
         var operator: Int = 0
+        var resultShown: Int = 0
         var numberText: CharSequence = ""
+
         
 
 
@@ -55,6 +58,13 @@ class MainActivity : AppCompatActivity() {
             findViewById<Button>(buttonId).setOnClickListener {
                 val number = findViewById<Button>(buttonId).text
                 numberText = number
+
+                if (resultShown == 1){
+                    resultShown = 0
+                    conta.text = result.text
+                    result.text = "0"
+                }
+
                 if (number == "x²"){
                     numberText = "^"
                     operator = 1
@@ -65,7 +75,12 @@ class MainActivity : AppCompatActivity() {
                     operator = 1
                 }
 
-                if (number == "%" || number == "÷" || number == "x"|| number == "-"|| number == "+"){
+                if (number == "x"){
+                    numberText = "*"
+                    operator = 1
+                }
+
+                if (number == "%" || number == "÷" || number == "-"|| number == "+"){
                     operator = 1
                 }
 
@@ -97,15 +112,17 @@ class MainActivity : AppCompatActivity() {
         clearBtt.setOnClickListener(){
             inicialized = 0;
             conta.text = "0";
+            result.text = "0";
         }
 
         equals.setOnClickListener(){
             val calculatedResult = Expression(conta.text.toString()).calculate()
 
             if (calculatedResult.isNaN()){
-                result.text = "Expressão inválida"
+                result.text = "#Erro!"
             }else{
                 result.text = calculatedResult.toString()
+                resultShown = 1
             }
 
         }
